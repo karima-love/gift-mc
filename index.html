@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لقلبي | رسالة خاصة</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo-glow">
+                <i class="fa-solid fa-heart heart-pulse"></i>
+            </div>
+            <div class="loading-text">جاري تحميل رسالتي ليكي...</div>
+            <div class="loading-percentage">0%</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            
+            <!-- زر فتح الرسالة السينمائي -->
+            <div class="enter-btn-container" id="enter-btn-container">
+                <button id="enter-btn" class="btn-luxury ripple-btn">
+                    <span>افتحي الرسالة</span>
+                    <i class="fa-solid fa-envelope-open"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="bg-animated">
+        <div class="blur-circle circle-1"></div>
+        <div class="blur-circle circle-2"></div>
+        <div class="blur-circle circle-3"></div>
+        <div id="particles-container"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-brand">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">البداية</a></li>
+            <li><a href="#support">فخور بيكي</a></li>
+            <li><a href="#special">سر قوتي</a></li>
+            <li><a href="#exams">دعواتي</a></li>
+            <li><a href="#letter">رسالتي</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Floating Audio Player -->
+    <div class="floating-music glass-card" id="music-toggle">
+        <div class="equalizer">
+            <span></span><span></span><span></span>
+        </div>
+        <span class="music-text">أغنيتنا</span>
+        <audio id="bg-music" loop>
+            <source src="assets/music/song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Floating Back to Top -->
+    <div class="back-to-top glass-card" id="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section-full">
+        <div class="hero-content reveal fade-up">
+            <div class="hero-badge glass-card">رسالة من قلبي</div>
+            <h1 class="hero-title">لـِ أجمل حاجة في حياتي</h1>
+            <p class="hero-subtitle">كل كلمة هنا اتكتبت عشانك إنتي وبس، عشان تعرفي غلاوتك ومكانتك عندي.</p>
+            <a href="#support" class="btn-luxury ripple-btn">
+                <span>ابدأي الحكاية</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="section-padding">
+        <div class="container">
+            <div class="card-luxury glass-card tilt-card reveal scale-in">
+                <div class="card-icon">
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+                <h2 class="section-title">أنا فخور بيكي جداً</h2>
+                <div class="card-body">
+                    <p>أنا شوفت تعبك طول السنة.. أنا عارف قد إيه الطريق كان صعب والضغط كان كبير عليكي. بس أنا مؤمن بيكي وبقوتك، ومؤمن إن تعبك ده عمره ما هيروح أبدًا.</p>
+                    <p>إن شاء الله ربنا هيجبر بخاطرك، وهيكرمك على كل دقيقة تعب سهرتي فيها. إنتي عملتي اللي عليكي وزيادة، وأنا دايماً شايفك ناجحة ومميزة.</p>
+                </div>
+                <div class="divider-animated"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Message Section -->
+    <section id="special" class="section-padding">
+        <div class="container">
+            <div class="two-columns">
+                <div class="column-text reveal slide-right">
+                    <h2 class="section-title text-start">إنتي سر قوتي</h2>
+                    <p class="deep-text">
+                        إنتي السبب في كل خطوة نجاح في حياتي. وجودك بيديني قوة غريبة، وبتخليني أحاول أبقى أحسن كل يوم عشان أكون أستاهلك. أنا فخور إنك في حياتي، وهفضل دايمًا في ضهرك.. مهما حصل ومهما كانت الظروف.
+                    </p>
+                    <p class="deep-text mt-3">
+                        أنا أول واحد هيحتفل بيكي، وأول واحد هيطمن عليكي، وأول واحد هيفضل دايماً مؤمن بيكي وبكل أحلامك.
+                    </p>
+                    <div class="stats-container mt-4">
+                        <div class="stat-item glass-card">
+                            <span class="stat-number counter" data-target="100">0</span><span class="stat-percent">%</span>
+                            <span class="stat-label">إيماني بيكي</span>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <i class="fa-solid fa-infinity stat-icon"></i>
+                            <span class="stat-label">دعمي ليكي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-image reveal slide-left">
+                    <div class="glass-image-container">
+                        <div class="glowing-border"></div>
+                        <div class="inner-glass-content">
+                            <i class="fa-regular fa-star star-float"></i>
+                            <h3>وجودك حياة</h3>
+                            <div class="animated-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exams Encouragement Section -->
+    <section id="exams" class="section-padding dark-romantic">
+        <div class="container">
+            <div class="text-center reveal fade-up">
+                <h2 class="section-title">عشان امتحاناتك</h2>
+                <div class="heart-divider">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            
+            <div class="grid-cards">
+                <div class="exam-card glass-card reveal fade-up" style="transition-delay: 0.1s">
+                    <i class="fa-solid fa-book-open icon-rose"></i>
+                    <p>إن شاء الله الامتحانات هتعدي على خير، وربنا يهون عليكي كل امتحان ويفتحلك كل طريق.</p>
+                </div>
+                <div class="exam-card glass-card reveal fade-up" style="transition-delay: 0.2s">
+                    <i class="fa-solid fa-dove icon-rose"></i>
+                    <p>ربنا يرزقك راحة قلب ويجبر بخاطرك، ويكرم تعبك ومجهودك اللي أنا شاهده بنفسي.</p>
+                </div>
+                <div class="exam-card glass-card reveal fade-up" style="transition-delay: 0.3s">
+                    <i class="fa-solid fa-crown icon-rose"></i>
+                    <p>ربنا يفرح قلبك بالنتيجة اللي تستحقيها، ويعوض كل لحظة تعب وإرهاق بخير وفرحة كبيرة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Section -->
+    <section id="prayer" class="section-padding">
+        <div class="container">
+            <div class="prayer-box glass-card reveal scale-in">
+                <i class="fa-solid fa-hands-praying prayer-icon"></i>
+                <h2 class="section-title">دعوتي لينا</h2>
+                <p class="prayer-text">
+                    "يا رب احفظنا، واكتب الخير لينا، واجمعنا دايماً في الخير. يا رب وفقها في كل خطوة وفرح قلبها، واحفظ أهلها. يا رب ارزقنا حياة جميلة هادية، وزود المحبة بينا، واجعل أيامنا كلها خير، وحقق لنا كل أمنياتنا."
+                </p>
+                <div class="amen-text">آمين يا رب العالمين</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Letter Section -->
+    <section id="letter" class="section-padding section-full flex-center">
+        <div class="container">
+            <div class="letter-paper reveal fade-up">
+                <div class="letter-content">
+                    <h3 class="letter-greeting">يا أجمل حاجة في دنيتي..</h3>
+                    <p>أنا بكتبلك الكلام ده عشان يفضل معاكي، تقرأيه كل ما تحسي إنك محتاجة حد يطمنك.</p>
+                    <p>أنا فخور بيكي.. وهفضل دايمًا فخور بيكي.</p>
+                    <p>وهفضل شايفك أقوى وأجمل وأشطر واحدة في عيني.</p>
+                    <p>ربنا يحققلك كل اللي بتحلمي بيه، ويسعد قلبك اللي مفيش في حنيته.</p>
+                    <p>اطمني.. أنا هفضل جنبك في كل خطوة.</p>
+                    
+                    <div class="letter-signature">
+                        <span>بحبك،</span>
+                        <div class="signature-line">أنا</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-nav">
+        <p>صُنع بكل حب ليكي وحدك <i class="fa-solid fa-heart pulse-heart"></i></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
